@@ -32,11 +32,28 @@
             <div class="name-form">
               <div class="first-namebox">
                 <p class="label-text">名字<span class="alert">※</span></p>
-                <input type="text" class="input_area">
+                <input type="text" name="first_name" class="input_area" required>
               </div>
               <div class="last-namebox">
                 <p class="label-text">名前<span class="alert">※</span></p>
-                <input type="text" class="input_area">
+                <input type="text" name="last_name" class="input_area" required>
+              </div>
+            </div>
+            <div class="gender-form">
+              <p class="label-text">性別</p>
+              <div class="gender-contents">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input">
+                  <span>女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input">
+                  <span>その他</span>
+                </label>
               </div>
             </div>
           </form>
