@@ -1,1 +1,76 @@
 @charset "utf-8";
+
+.wrapper {
+  width: 100%;
+  padding: 32px 0;
+}
+
+/* インナー */
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/* ボタンの設定 */
+.button {
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* メインの枠組み */
+
+.main {
+  padding: 48px 64px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
+}
+
+/* フォームタイトル */
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.sns-links {
+  display: flex;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sns-link:last-child {
+  margin-left: 8px;
+}
+
+.facebook-link {
+  padding: 13px;
+  background-color: #3b5999;
+  border-color: #3b5999;
+  width: 50%;
+}
+
+.google-link {
+  padding: 13px;
+  background-color: #fff;
+  width: 50%;
+}
+
+.facebook {
+  color: #fff;
+}
+
+.google {
+  color: #dd4b39;
+}
+
+.supplement-text {
+  text-align: center;
+  color: #949697;
+  font-size: 12px;
+}
