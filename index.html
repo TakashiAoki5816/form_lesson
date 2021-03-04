@@ -12,6 +12,7 @@
   <body>
     <div class="wrapper">
       <div class="inner">
+        <!-- メイン -->
         <div class="main">
           <div class="form-title">
             <h1 class="title">アカウント作成</h1>
@@ -25,11 +26,14 @@
             </div>
             <p class="supplement-text is-defaultText">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </div>
+          <!-- 仕切り -->
           <div class="devider">
             <p class="is-defaultText">アカウント情報</p>
           </div>
+          <!-- メインフォーム -->
           <form class="form-content" action="#" method="POST">
-            <div class="name-form">
+            <!-- 名前 -->
+            <div class="row name-form">
               <div class="first-namebox">
                 <p class="label-text">名字<span class="alert">※</span></p>
                 <input type="text" name="first_name" class="input-area" required>
@@ -39,7 +43,8 @@
                 <input type="text" name="last_name" class="input-area" required>
               </div>
             </div>
-            <div class="gender-form">
+            <!-- 性別 -->
+            <div class="row gender-form">
               <p class="label-text">性別</p>
               <div class="gender-contents">
                 <label class="gender-content">
@@ -56,7 +61,8 @@
                 </label>
               </div>
             </div>
-            <div class="birthplace-form">
+            <!-- 出身 -->
+            <div class="row birthplace-form">
               <p class="label-text">出身</p>
               <div class="birthplace-area">
                 <select name="birthplace" id="" class="input-init input-area">
@@ -65,6 +71,34 @@
                   <option value="埼玉">埼玉</option>
                   <option value="神奈川">神奈川</option>
                 </select>
+              </div>
+            </div>
+            <!-- Eメール -->
+            <div class="row email-form">
+              <p class="label-text">Eメール<span class="alert">※</span></p>
+              <div class="email-area">
+                <input type="email" class="input-area email" name="email" placeholder="ex) hoge@example.com" required>
+              </div>
+            </div>
+            <!-- 電話番号 -->
+            <div class="row tel-form">
+              <p class="label-text">電話番号</p>
+              <div class="tel-area">
+                <input type="tel" class="input-area tel" name="tel" placeholder="ex) 09012345678">
+              </div>
+            </div>
+            <!-- パスワード -->
+            <div class="row password-form">
+              <p class="label-text">パスワード<span class="alert">※</span></p>
+              <div class="password-area">
+                <input type="password" class="input-area password" name="password" required>
+              </div>
+            </div>
+            <!-- パスワード確認 -->
+            <div class="row password-confirm-form">
+              <p class="label-text">パスワード（確認用）<span class="alert">※</span></p>
+              <div class="password-area">
+                <input type="password" class="input-area password" name="password-confirm" required>
               </div>
             </div>
           </form>

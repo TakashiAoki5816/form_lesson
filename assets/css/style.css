@@ -103,7 +103,7 @@
   background-color: #ececec;
 }
 
-/* メインフォーム */
+/* 共通フォーム */
 .input-area {
   box-sizing: border-box;
   height: 36px;
@@ -132,10 +132,13 @@
   color: #dd4b39;
 }
 
-/* ネームフォーム */
+.row {
+  margin-bottom: 20px;
+}
+
+/* 名前 */
 .name-form {
   display: flex;
-  margin-bottom: 20px;
 }
 
 .first-namebox {
@@ -147,11 +150,7 @@
   margin-left: 16px;
 }
 
-/* 性別フォーム */
-.gender-form {
-  margin-bottom: 20px;
-}
-
+/* 性別 */
 .gender-contents {
   display: flex;
   color: #545658;
@@ -204,7 +203,6 @@
 
 /* 出身 */
 .birthplace-form {
-  margin-bottom: 20px;
   width: 50%;
 }
 
@@ -224,3 +222,5 @@
   border-right: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
 }
+
+/* Eメール */
