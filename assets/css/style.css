@@ -20,6 +20,11 @@
   cursor: pointer;
 }
 
+.is-defaultText {
+  color: #949697;
+  font-size: 12px;
+}
+
 /* メインの枠組み */
 
 .main {
@@ -71,6 +76,29 @@
 
 .supplement-text {
   text-align: center;
-  color: #949697;
-  font-size: 12px;
+}
+
+/* 仕切り */
+.devider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.devider p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.devider:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
 }
