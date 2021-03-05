@@ -13,11 +13,16 @@
 
 /* ボタンの設定 */
 .button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
-  box-sizing: border-box;
-  font-size: 13px;
-  cursor: pointer;
 }
 
 .is-defaultText {
@@ -59,10 +64,18 @@
   width: 50%;
 }
 
+.facebook-link:hover {
+  background-color: #2f477a;
+}
+
 .google-link {
   padding: 13px;
   background-color: #fff;
   width: 50%;
+}
+
+.google-link:hover {
+  background-color: rgb(236, 236, 236);
 }
 
 .facebook {
@@ -270,27 +283,23 @@
   height: 100px;
 }
 
-/* ボタン */
-.button {
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: center;
-  transition: 0.3s;
-  padding: 13px;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-}
-
-.button:hover {
-  background-color: #00a8a5;
-}
-
+/* 決定ボタン */
 .submit_button {
   width: 100%;
   padding: 13px;
   background-color: #01bfbd;
   color: #fff;
+}
+
+.submit_button:hover {
+  background-color: #00a8a5;
+}
+
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.rules-link-color {
+  color: #01a6a4;
 }
