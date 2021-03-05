@@ -29,7 +29,6 @@
 
 .main {
   padding: 48px 64px;
-  border: 1px solid rgb(179, 179, 179);
   border-radius: 4px;
   box-sizing: border-box;
   box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
@@ -223,4 +222,42 @@
   border-bottom: 2px solid #d9d9d9;
 }
 
-/* Eメール */
+/* 希望コース */
+.course-option {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course-input {
+  display: none;
+}
+
+.course-option-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-option-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-input:checked + .course-option-text::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
