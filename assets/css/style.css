@@ -117,7 +117,10 @@
 }
 
 .input-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  resize: none;
 }
 
 .label-text {
@@ -260,4 +263,9 @@
   margin-top: -12px;
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
+}
+
+/* 備考 */
+.input-note {
+  height: 100px;
 }
