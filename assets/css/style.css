@@ -269,3 +269,28 @@
 .input-note {
   height: 100px;
 }
+
+/* ボタン */
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: #00a8a5;
+}
+
+.submit_button {
+  width: 100%;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
