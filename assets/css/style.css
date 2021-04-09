@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 .wrapper {
-  width: 100%;
   padding: 32px 0;
   background-color: #f2f6f7;
 }
@@ -52,7 +51,9 @@
 }
 
 .input-area:focus {
-  border-color: #01bfbd;
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
 
 .input-init {
@@ -195,7 +196,7 @@
   padding: 3px 3px 3px 20px;
 }
 
-.gender-content span::before {
+.gender-content .gender-type::before {
   content: "";
   position: absolute;
   left: 0;
@@ -208,7 +209,7 @@
   border-radius: 50%;
 }
 
-.gender-input:checked + span::after {
+.gender-input:checked + .gender-type::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -240,6 +241,12 @@
   width: 5px;
   border-right: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
+}
+
+.select-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
 }
 
 /* 希望コース */
@@ -297,6 +304,7 @@
   padding: 13px;
   background-color: #01bfbd;
   color: #fff;
+  border: none;
 }
 
 .submit_button:hover {
@@ -313,18 +321,28 @@
   color: #01a6a4;
 }
 
+.link-color:hover {
+  color: #01bfbd;
+}
+
 /* フッター */
 .footer {
   text-align: center;
   margin-top: 32px;
 }
 
-.footer-text {
+.footer-margin-top {
+  display: inline-block;
   margin-top: 8px;
+}
+
+.footer_text {
   line-height: 16px;
   font-size: 12px;
 }
 
-.footer-text:first-child {
-  margin-top: 0;
+.footer a:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
