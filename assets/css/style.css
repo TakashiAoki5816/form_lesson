@@ -48,6 +48,11 @@
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 3px;
+  outline:none
+}
+
+.input-area:focus {
+  border-color: #01bfbd;
 }
 
 .input-init {
@@ -69,7 +74,6 @@
 }
 
 .alert {
-  margin-left: 2px;
   color: #dd4b39;
 }
 
@@ -90,6 +94,7 @@
 .title {
   text-align: center;
   font-size: 24px;
+  color: #545658;
 }
 
 .sns-links {
@@ -180,7 +185,7 @@
   cursor: pointer;
 }
 
-.gender-content:last-child {
+.gender-content:first-child {
   margin-left: 0;
 }
 
@@ -244,8 +249,8 @@
   font-size: 16px;
 }
 
-.course-option:first-child {
-  margin-top: 0;
+.course-option:first-of-type {
+  margin-top: 5px;
 }
 
 .course-input {
