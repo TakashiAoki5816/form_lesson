@@ -17,10 +17,10 @@
           <div class="form-title">
             <h1 class="title">アカウント作成</h1>
             <div class="sns-links">
-              <div class="sns-link facebook-link button">
+              <div class="sns-link facebook-link button is-width-half">
                 <a href="" class="facebook">Facebookでスタート</p>
               </div>
-              <div class="sns-link google-link button">
+              <div class="sns-link google-link button is-width-half">
                 <a href="" class="google">Googleでスタート</a>
               </div>
             </div>
@@ -34,19 +34,19 @@
           <form class="form-content" action="#" method="POST">
             <!-- 名前 -->
             <div class="row name-form">
-              <div class="first-namebox">
+              <div class="is-width-half">
                 <p class="label-text">名字<span class="alert">※</span></p>
-                <input type="text" name="first_name" class="input-area" required>
+                <input type="text" name="first_name" class="input-area is-margin-top" required>
               </div>
-              <div class="last-namebox">
+              <div class="last-name_box is-width-half">
                 <p class="label-text">名前<span class="alert">※</span></p>
-                <input type="text" name="last_name" class="input-area" required>
+                <input type="text" name="last_name" class="input-area is-margin-top" required>
               </div>
             </div>
             <!-- 性別 -->
             <div class="row gender-form">
               <p class="label-text">性別</p>
-              <div class="gender-contents">
+              <div class="gender-contents is-margin-top">
                 <label class="gender-content">
                   <input type="radio" name="gender" value="male" class="gender-input">
                   <span>男性</span>
@@ -62,9 +62,9 @@
               </div>
             </div>
             <!-- 出身 -->
-            <div class="row birthplace-form">
+            <div class="row is-width-half">
               <p class="label-text">出身</p>
-              <div class="birthplace-area">
+              <div class="birthplace-area is-margin-top">
                 <select name="birthplace" id="" class="input-init input-area">
                   <option value="東京">東京</option>
                   <option value="千葉">千葉</option>
@@ -74,35 +74,27 @@
               </div>
             </div>
             <!-- Eメール -->
-            <div class="row email-form">
+            <div class="row">
               <p class="label-text">Eメール<span class="alert">※</span></p>
-              <div class="email-area">
-                <input type="email" class="input-area email" name="email" placeholder="ex) hoge@example.com" required>
-              </div>
+              <input type="email" class="input-area is-margin-top" name="email" placeholder="ex) hoge@example.com" required>
             </div>
             <!-- 電話番号 -->
-            <div class="row tel-form">
+            <div class="row">
               <p class="label-text">電話番号</p>
-              <div class="tel-area">
-                <input type="tel" class="input-area tel" name="tel" placeholder="ex) 09012345678">
-              </div>
+              <input type="tel" class="input-area is-margin-top" name="tel" placeholder="ex) 09012345678">
             </div>
             <!-- パスワード -->
-            <div class="row password-form">
+            <div class="row">
               <p class="label-text">パスワード<span class="alert">※</span></p>
-              <div class="password-area">
-                <input type="password" class="input-area password" name="password" required>
-              </div>
+              <input type="password" class="input-area is-margin-top" name="password" required>
             </div>
             <!-- パスワード確認 -->
-            <div class="row password-confirm-form">
+            <div class="row">
               <p class="label-text">パスワード（確認用）<span class="alert">※</span></p>
-              <div class="password-area">
-                <input type="password" class="input-area password" name="password-confirm" required>
-              </div>
+              <input type="password" class="input-area is-margin-top" name="password-confirm" required>
             </div>
             <!-- 希望コース -->
-            <div class="row course">
+            <div class="row">
               <p class="label-text">希望コース</p>
               <div class="course-option">
                 <input type="checkbox" name="course" class="course-input" value="frontend" id="frontend">
@@ -120,9 +112,7 @@
             <!-- 備考 -->
             <div class="row notes">
               <p class="label-text">備考</p>
-              <div class="note">
-                <textarea class="input-init input-note input-area" name="note" placeholder="何かあればご記入ください"></textarea>
-              </div>
+              <textarea class="input-init input-note input-area is-margin-top" name="note" placeholder="何かあればご記入ください"></textarea>
             </div>
             <!-- 決定ボタン -->
             <div class="row">
@@ -133,8 +123,12 @@
         </div>
         <!-- フッター -->
         <div class="footer">
-          <p>すでにアカウントをお持ちですか？<a href="" class="link-color"> ログイン</a></p>
-          <p><a href="" class="link-color">認証メールが届きませんか？</a></p>
+          <p class="footer-text">すでにアカウントをお持ちですか？
+            <a href="" class="link-color"> ログイン</a>
+          </p>
+          <p class="footer-text">
+            <a href="" class="link-color">認証メールが届きませんか？</a>
+          </p>
         </div>
       </div>
     </section>

@@ -6,13 +6,7 @@
   background-color: #f2f6f7;
 }
 
-/* インナー */
-.inner {
-  width: 640px;
-  margin: 0 auto;
-}
-
-/* ボタンの設定 */
+/* 共通 */
 .button {
   box-sizing: border-box;
   display: inline-block;
@@ -31,94 +25,18 @@
   font-size: 12px;
 }
 
-/* メインの枠組み */
-
-.main {
-  background-color: #fff;
-  padding: 48px 64px;
-  margin-bottom: 32px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
-}
-
-/* フォームタイトル */
-
-.title {
+.is-text-center {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 24px;
 }
 
-.sns-links {
-  display: flex;
-  text-align: center;
-  margin-bottom: 8px;
+.is-margin-top {
+  margin-top: 5px;
 }
 
-.sns-link:last-child {
-  margin-left: 8px;
-}
-
-.facebook-link {
-  padding: 13px;
-  background-color: #3b5999;
-  border-color: #3b5999;
+.is-width-half {
   width: 50%;
 }
 
-.facebook-link:hover {
-  background-color: #2f477a;
-}
-
-.google-link {
-  padding: 13px;
-  background-color: #fff;
-  width: 50%;
-}
-
-.google-link:hover {
-  background-color: rgb(236, 236, 236);
-}
-
-.facebook {
-  color: #fff;
-}
-
-.google {
-  color: #dd4b39;
-}
-
-.supplement-text {
-  text-align: center;
-}
-
-/* 仕切り */
-.devider {
-  position: relative;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.devider p {
-  display: inline-block;
-  position: relative;
-  padding: 0 10px;
-  background-color: #fff;
-}
-
-.devider:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 1px;
-  width: 100%;
-  background-color: #ececec;
-}
-
-/* 共通クラス */
 .input-area {
   box-sizing: border-box;
   height: 36px;
@@ -140,8 +58,12 @@
   resize: none;
 }
 
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+
 .label-text {
-  margin-bottom: 5px;
   font-size: 12px;
   color: #545658;
 }
@@ -152,21 +74,97 @@
 }
 
 .row {
-  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* 共通 */
+
+/* メイン */
+.main {
+  background-color: #fff;
+  padding: 48px 64px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
 }
 
-/* メインフォーム */
+.title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.sns-links {
+  display: flex;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.sns-link:last-child {
+  margin-left: 8px;
+}
+
+.facebook-link {
+  padding: 13px;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+.facebook-link:hover {
+  background-color: #2f477a;
+}
+
+.google-link {
+  padding: 13px;
+  background-color: #fff;
+}
+
+.google-link:hover {
+  background-color: #f2f6f7;
+}
+
+.facebook {
+  color: #fff;
+}
+
+.google {
+  color: #dd4b39;
+}
+
+.supplement-text {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* 仕切り */
+.devider {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.devider p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.devider:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
 /* 名前 */
 .name-form {
   display: flex;
 }
 
-.first-namebox {
-  width: 50%;
-}
-
-.last-namebox {
-  width: 50%;
+.last-name_box {
   margin-left: 16px;
 }
 
@@ -182,7 +180,7 @@
   cursor: pointer;
 }
 
-.gender-content:first-child {
+.gender-content:last-child {
   margin-left: 0;
 }
 
@@ -222,10 +220,6 @@
 }
 
 /* 出身 */
-.birthplace-form {
-  width: 50%;
-}
-
 .birthplace-area {
   position: relative;
 }
@@ -245,9 +239,13 @@
 
 /* 希望コース */
 .course-option {
-  margin-bottom: 10px;
+  margin-top: 10px;
   color: #545658;
   font-size: 16px;
+}
+
+.course-option:first-child {
+  margin-top: 0;
 }
 
 .course-input {
@@ -303,6 +301,7 @@
 .agreement {
   font-size: 12px;
   line-height: 16px;
+  margin-top: 20px;
 }
 
 .link-color {
@@ -312,10 +311,15 @@
 /* フッター */
 .footer {
   text-align: center;
+  margin-top: 32px;
 }
 
-.footer p {
-  margin-bottom: 8px;
+.footer-text {
+  margin-top: 8px;
   line-height: 16px;
   font-size: 12px;
+}
+
+.footer-text:first-child {
+  margin-top: 0;
 }
